@@ -1,0 +1,7 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Курсовая работа");
+        System.out.println("Базовый уровень");
+
+    }
+}
