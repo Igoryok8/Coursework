@@ -8,7 +8,9 @@ public class Main {
     public static int calculateTotalSalary() {
         int sum = 0;
         for (Employee employee:employees) {
-            sum += employee.getSalary();
+            if (employee != null && employee.getSalary()>0) {
+                sum += employee.getSalary();
+            }
         }
         return sum;
     }
@@ -35,7 +37,7 @@ public class Main {
         return result;
     }
     public static float calculateAverageSalary() {
-        return calculateTotalSalary() / (float)employees.length;
+        return calculateTotalSalary() / Employee.getCounter();
     }
     public static void printFullNames() {
         for (Employee employee : employees) {

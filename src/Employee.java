@@ -39,6 +39,10 @@ public class Employee {
         return id;
     }
 
+    public static int getCounter() {
+        return counter;
+    }
+
     @Override
     public String toString() {
         return "id: " + id +
